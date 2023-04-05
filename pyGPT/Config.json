@@ -1,0 +1,26 @@
+{
+    "name": "OpenAI",
+    "icon": "brain.svg",
+    "identifier": "tw.rain.popclip.extension.gpt",
+    "description": "Send the selected text with any given prompt to the OpenAI",
+    "note": "To use this extension you will need an <a href=\"https://platform.openai.com/account/api-keys\">OpenAPI API key</a>",
+    "app": {
+      "name": "ChatGPT",
+      "link": "https://openai.com/blog/chatgpt"
+    },
+    "popclipVersion": 4069,
+    "interpreter": "python3",
+    "Shell Script File": "gpt.py",
+    "after": "show-status",
+    "entitlements": [
+      "network"
+    ],
+    "options": [
+      {
+        "identifier": "apikey",
+        "label": "API Key",
+        "type": "string",
+        "description": "Obtain an API key from: https://platform.openai.com/account/api-keys"
+      }
+    ]
+  }
