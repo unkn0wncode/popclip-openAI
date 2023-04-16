@@ -44,4 +44,4 @@ def show_response_dialog(content):
 if __name__ == "__main__":
     user_text = get_user_text()
     response_text = queryOpenAI(user_text, os.environ['POPCLIP_TEXT'])
-    show_response_dialog(response_text)
+    show_response_dialog(response_text.replace('"','\\"').replace("'","\\'"))
