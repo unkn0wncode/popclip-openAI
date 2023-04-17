@@ -27,6 +27,10 @@ return dataToSend"""
         exit()
     return stdout.strip()
 
+def sanitize(str):
+    return str.replace("\\", "\\\\") \
+              .replace("\"", "\\\"")
+
 def show_response_dialog(content):
     script = f'''display dialog "Response: {content}" buttons {{"Copy", "OK"}} default button 2
     set button to the button returned of the result
@@ -44,4 +48,4 @@ def show_response_dialog(content):
 if __name__ == "__main__":
     user_text = get_user_text()
     response_text = queryOpenAI(user_text, os.environ['POPCLIP_TEXT'])
-    show_response_dialog(response_text.replace('"','\\"').replace("'","\\'"))
+    show_response_dialog(sanitize(response_text))
