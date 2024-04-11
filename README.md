@@ -1,5 +1,8 @@
 # popclip-openAI
-Send selected text to GPT3.5 Turbo with any prompt you want.
+
+Send selected text to GPT 3.5 Turbo / GPT 4 Turbo / GPT 4 Turbo Preview with any prompt you want.
 
 Want to simply use it?
-Just download PyGPT.popclipextz, double click, input OpenAI key in the popclip box and that's it.
+Just download ChatGPTCustom.popclipextz, double-click it, input your OpenAI key, prompt, and select the model in the PopClip box—that's it!
+
+![screenshot](https://raw.githubusercontent.com/unkn0wncode/popclip-openAI/main/screen.png)

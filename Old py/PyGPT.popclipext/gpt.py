@@ -23,8 +23,6 @@ set dataToSend to the text returned of the result
 return dataToSend"""
     p = Popen(['osascript', '-'], stdin=PIPE, stdout=PIPE, stderr=PIPE, universal_newlines=True, text=True)
     stdout, stderr = p.communicate(script)
-    if stderr != "":
-        exit()
     return stdout.strip()
 
 def sanitize(str):
