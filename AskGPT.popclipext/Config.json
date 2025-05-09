@@ -1,5 +1,5 @@
 {
-  "name": "OpenAI Ask Do",
+  "name": "OpenAI Prompt",
   "icon": "brain.svg",
   "identifier": "tw.unkn0wncode.popclip.extension.chatgpt-jxa",
   "description": "Send the selected text to ChatGPT and append the response.",
